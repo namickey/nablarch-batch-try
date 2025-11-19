@@ -1,5 +1,7 @@
 ### ビルド＆実行
 
+前提：`JDK21`がインストールされていること
+
 ```
 mvnw.cmd -P gsp clean generate-resources
 
