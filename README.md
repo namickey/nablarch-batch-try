@@ -1,13 +1,13 @@
-### アプリケーションのビルド
+### ビルド＆実行
 
-アプリケーションをビルドします。以下のコマンドを実行してください。
+```
+mvnw.cmd -P gsp clean generate-resources
 
-    $mvn package
+mvnw.cmd package
 
-* データバインドを使用した住所登録バッチ
-
-      $mvn exec:java -Dexec.mainClass=nablarch.fw.launcher.Main -Dexec.args="'-requestPath' 'ImportZipCodeFileAction/ImportZipCodeFile' '-diConfig' 'classpath:import-zip-code-file.xml' '-userId' '105'"
-
+データバインドを使用した住所登録バッチ
+mvnw.cmd exec:java -Dexec.mainClass=nablarch.fw.launcher.Main -Dexec.args="'-requestPath' 'ImportZipCodeFileAction/ImportZipCodeFile' '-diConfig' 'classpath:import-zip-code-file.xml' '-userId' '105'"
+```
 
 
 # ディレクトリについての補足
