@@ -8,11 +8,11 @@
   <!-- テーブル定義 -->
   <import file="nablarch/schema-config.xml" />
 
-  <!-- バリデーション機能 -->
-  <import file="validation.xml"/>
-
   <!-- 精査に使用する文字集合定義 -->
   <import file="nablarch/core/validation/charset-definition.xml"/>
+
+  <!-- DomainManager 実装クラス設定 -->
+  <component name="domainManager" class="com.example.domain.SampleDomainManager"/>
 
   <!-- 環境設定ファイル -->
   <config-file file="common.properties"/>

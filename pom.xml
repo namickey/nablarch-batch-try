@@ -15,9 +15,7 @@
   <packaging>jar</packaging>
 
   <!--
-   ライセンス、開発者やSCMといったプロジェクト自身に関する情報は、親pomの情報を
-   引き継がないように空の値で上書きしている。
-   これらの値は、必要に応じてプロジェクトで変更すること。
+   ライセンス、開発者やSCMといったプロジェクト自身に関する情報は、親pomの情報を引き継がないように空の値で上書きしている。
   -->
   <licenses>
     <license />
@@ -310,11 +308,6 @@
       <scope>runtime</scope>
     </dependency>
 
-    <dependency>
-      <groupId>com.nablarch.framework</groupId>
-      <artifactId>nablarch-mail-sender</artifactId>
-    </dependency>
-
     <!-- Nablarchのテスティングフレームワークを実行するために必要なライブラリ -->
     <dependency>
       <groupId>com.nablarch.framework</groupId>
@@ -330,12 +323,6 @@
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-fw-messaging-http</artifactId>
       <scope>test</scope>
-    </dependency>
-
-    <!-- メール送信 -->
-    <dependency>
-      <groupId>jakarta.mail</groupId>
-      <artifactId>jakarta.mail-api</artifactId>
     </dependency>
 
     <dependency>
