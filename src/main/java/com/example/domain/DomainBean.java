@@ -6,7 +6,7 @@ import nablarch.core.validation.ee.SystemChar;
 /**
  * ドメイン定義。
  */
-public class SampleDomainBean {
+public class DomainBean {
 
     /** 公共団体コード */
     @Length(min = 5, max = 5)

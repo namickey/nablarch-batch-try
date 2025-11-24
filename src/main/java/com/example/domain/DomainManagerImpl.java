@@ -3,17 +3,17 @@ package com.example.domain;
 import nablarch.core.validation.ee.DomainManager;
 
 /**
- * {@link DomainManager} の実装クラス。
+ * {@link DomainManagerImpl} の実装クラス。
  * <p>
  * ドメインを定義したBeanクラスを返却する。
  * </p>
  */
-public final class SampleDomainManager
-        implements DomainManager<SampleDomainBean> {
+public final class DomainManagerImpl
+        implements DomainManager<DomainBean> {
 
     @Override
-    public Class<SampleDomainBean> getDomainBean() {
+    public Class<DomainBean> getDomainBean() {
         // ドメインBeanのClassオブジェクトを返す。
-        return SampleDomainBean.class;
+        return DomainBean.class;
     }
 }
